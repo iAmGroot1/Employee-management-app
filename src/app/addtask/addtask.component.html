@@ -1,0 +1,66 @@
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Employee management system</h1>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+        <div class="card" style="width: 30rem;" >
+            <div class="card-header">
+                Add Task
+              </div>
+            <div class="card-body">
+                
+                <form #userlogin ="ngForm" (ngSubmit) = "addData(userlogin.value)">
+                    <div class="form-group ">
+                        <label for="exampleInputEmail1">Task ID</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name = "taskID"  placeholder="taskID" ngModel>
+                    </div>
+                    <div class="form-group ">
+                        <label for="exampleInputEmail1">Task Description</label>
+                        <input type=""  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name = "taskDesc" placeholder="Task Description" ngModel>
+                    </div>
+                    <div class="form-group ">
+                        <label for="exampleInputEmail1">Assigned To</label>
+                        <input type=""  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name = "assignedTo" placeholder="Assigned To" ngModel>
+                    </div>
+                    
+                    <div class="form-group ">
+                        <label for="exampleInputEmail1">Assigned By</label>
+                        <input type=""  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name = "assignedBy" placeholder="Assigned By" ngModel>
+                    </div>
+                    <div class="form-group ">
+                        <label for="exampleInputEmail1">Task Status</label>
+                        <input type=""  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name = "taskStatus" placeholder="Task Status" ngModel>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    
+    </div>
+ </div>
+    <div class="container">
+     <table class="table table-bordered">
+       <thead>
+         <tr>
+           <th scope="col">Name</th>
+           <th scope="col">Feedback</th>
+         </tr>
+       </thead>
+       <!-- <tbody>
+         <tr>
+           <tr *ngFor="let item of feedbackList">
+               <td>{{item.name}}</td>   
+               <td>{{item.feedback}}</td>  
+               <td><button class="btn btn-danger" (click)="delete(item._id)">Del</button></td>
+
+           </tr>
+       </tbody> -->
+     </table>
+</div>
